@@ -7,7 +7,7 @@ wheels/
 *.egg-info
 .env
 .env.example
-
+README.md
 
 # Virtual environments
 .venv
