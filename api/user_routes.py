@@ -9,11 +9,11 @@ user_api_model = user_ns.model(
     "User",
     {
         "id": fields.Integer(),
-        "name": fields.Integer(),
-        "email": fields.Integer(),
-        "department": fields.Integer(),
-        "contact": fields.Integer(),
-        "role": fields.Integer(),
+        "name": fields.String(),
+        "email": fields.String(),
+        "department": fields.String(),
+        "contact": fields.String(),
+        "role": fields.String(),
         "manager_id": fields.Integer(),
     }
 )
@@ -28,6 +28,7 @@ class UsersResource(Resource):
     def post(self):
         """Create a new user"""
         data = request.get_json()
+        
         new_user = User(
             name = data.get("name"),
             email = data.get("email"),
@@ -53,13 +54,13 @@ class UsersResource(Resource):
             user_to_update = User.query.get_or_404(id)
             data = request.get_json()
             user_to_update.update(
-                data.get("name"),
-                data.get("email"),
-                data.get("department"),
-                data.get("designation"),
-                data.get("contact"),
-                data.get("role"),
-                data.get("mananger_id")
+                name = data.get("name"),
+                email = data.get("email"),
+                department = data.get("department"),
+                designation = data.get("designation"),
+                contact = data.get("contact"),
+                role = data.get("role"),
+                manager_id = data.get("mananger_id")
             )
             return {"message": "User updated successfully."}
 
