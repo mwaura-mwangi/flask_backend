@@ -63,6 +63,7 @@ dependencies = [
     { name = "flask" },
     { name = "flask-restx" },
     { name = "flask-sqlalchemy" },
+    { name = "my-custom-module" },
     { name = "python-decouple" },
     { name = "python-dotenv" },
 ]
@@ -72,6 +73,7 @@ requires-dist = [
     { name = "flask", specifier = ">=3.1.3" },
     { name = "flask-restx", specifier = ">=1.3.2" },
     { name = "flask-sqlalchemy", specifier = ">=3.1.1" },
+    { name = "my-custom-module", specifier = ">=0.1" },
     { name = "python-decouple", specifier = ">=3.8" },
     { name = "python-dotenv", specifier = ">=1.2.4" },
 ]
@@ -239,6 +241,15 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/81/99/157e10966b033b363aeda5263e82596ee232a0b1d082fdbf90aa417ff083/markupsafe-3.0.4-cp315-cp315t-win32.whl", hash = "sha256:e49fb0d1ce92cfa0cb198cc5b1b11cdf9d0638658e2a2db2687e39db7c87fc78", size = 14300, upload-time = "2026-10-02T23:06:53.241Z" },
     { url = "https://files.pythonhosted.org/packages/33/05/55884815414c9706a23deca150b72c25a62109e65b0b6ce232077802c719/markupsafe-3.0.4-cp315-cp315t-win_amd64.whl", hash = "sha256:4f6e0852a0283b1b1fd776eeb7b766a5f440b3e2bd31ab51af3b400585f3965c", size = 14522, upload-time = "2026-10-02T23:06:54.729Z" },
     { url = "https://files.pythonhosted.org/packages/92/f9/ecbde7149e95b8a0f18e16d5d747f7dc06049d5da2e4f77f6f5e4a1f46a8/markupsafe-3.0.4-cp315-cp315t-win_arm64.whl", hash = "sha256:39dbacefc411633db5b4378b066a9aca70a3d7e2922c9e578d825f844026eeba", size = 14417, upload-time = "2026-10-02T23:06:56.246Z" },
+]
+
+[[package]]
+name = "my-custom-module"
+version = "0.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/80/5b/e60401e53508c93bf04377b8207bfc2fe96b0706148d4364e19fe4b78568/my_custom_module-0.1.tar.gz", hash = "sha256:c813d5b98402e00162c8a65d37c2a78dbdee6be3b1924f28abd57f539f680164", size = 725, upload-time = "2023-03-24T08:43:11.822Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/2b/6d/9899fdae5c5cf0f9db679eefcb3db817978c8104c878441d17d75d2f4597/my_custom_module-0.1-py3-none-any.whl", hash = "sha256:6f2491bbaf13bb5bfcc6e0d7eeac84a9427389a364e4932f5a3c070f047ce8af", size = 998, upload-time = "2023-03-24T08:43:09.618Z" },
 ]
 
 [[package]]
